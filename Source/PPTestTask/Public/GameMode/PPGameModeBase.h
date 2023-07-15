@@ -44,7 +44,7 @@ private:
     FTimerHandle EndTimerHandle;
 
     int32 CurrentCount = 0;
-    int32 CurrentTime = 3;
+    int32 CurrentTime = 2;
     int32 RedPoint = 0;
     int32 BluePoint = 0;
 

@@ -40,8 +40,8 @@ void APPBaseBollActor::BeginPlay()
 {
     Super::BeginPlay();
     Start = GetActorLocation();
-    //ImpulseDirection = {2, 2, 0};
-    //InitImpuls(ImpulseDirection);
+    ImpulseDirection = {FMath::FRandRange(-2, 2), FMath::FRandRange(-2, 2), 0};
+    InitImpuls(ImpulseDirection);
 }
 
 void APPBaseBollActor::Tick(float DeltaTime)

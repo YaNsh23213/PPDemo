@@ -63,4 +63,8 @@ void UPPRoundWidget::NativeOnInitialized()
     {
         // WaitingBox->SetVisibility(ESlateVisibility::Hidden);
     }
+    if (BeforeBox)
+    {
+        BeforeBox->SetVisibility(ESlateVisibility::Hidden);
+    }
 }
