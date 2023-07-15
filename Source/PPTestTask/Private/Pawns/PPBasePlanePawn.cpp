@@ -40,13 +40,19 @@ void APPBasePlanePawn::MoveLeftRightClient_Implementation(float Amount)
     {
         auto TempLocation = GetActorLocation();
         TempLocation.Y = TempLocation.Y - Amount;
-        SetActorLocation(TempLocation);
+        if (TempLocation.Y < 1100 && TempLocation.Y > -700)
+        {
+            SetActorLocation(TempLocation);
+        }
     }
-    else
+    if (GetControlRotation().Yaw < 100)
     {
         auto TempLocation = GetActorLocation();
         TempLocation.Y = TempLocation.Y + Amount;
-        SetActorLocation(TempLocation);
+        if (TempLocation.Y < 1100 && TempLocation.Y > -700)
+        {
+            SetActorLocation(TempLocation);
+        }
     }
 }
 
